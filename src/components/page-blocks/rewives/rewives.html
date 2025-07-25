@@ -1,0 +1,12 @@
+<div class="reviews-slider-wrap">
+  <div class="c-container">
+    <h2 class="s-small-title">Отзывы</h2>
+    <div class="reviews-slider swiper js-reviews-slider">
+      <div class="swiper-wrapper">
+        @@loop('item.html', './data/reviews.json')
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>

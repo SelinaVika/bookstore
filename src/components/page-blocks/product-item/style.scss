@@ -1,0 +1,39 @@
+.main-product-item{
+    &-img{
+        position: relative;
+        box-shadow: -6px 0px 16px 1px rgb(89 89 89 / 4%), -3px 8px 16px 1px rgb(183 183 183 / 41%);
+        border-radius: 4px;
+        overflow: hidden;
+        img {
+             display: block;
+        }
+    }
+    
+}
+
+.main-products-item-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-product-like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.main-product-later{
+    min-width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    svg {
+       width: 20px;
+    }
+}

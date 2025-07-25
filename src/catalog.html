@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Easy-webdev-startpack v3.0",
+"description":"Gulp pack for easy html/php markup development",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	
+
+	<main class="main">
+		<div class="breadcrumbs-wrap">
+			<div class="c-container">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><span href="#">Каталог</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="c-container">
+			<h1 class="s-title">Каталог</h1>
+			<div class="catalog-row">
+				<aside class="catalog-left">
+	
+				</aside>
+				<aside class="catalog-right">
+					@@include('components/page-blocks/catalog-list/index.html')
+				</aside>
+			</div>
+		</div>
+	 
+	 
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+
+</body>
+
+</html>

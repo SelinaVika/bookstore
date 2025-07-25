@@ -1,0 +1,128 @@
+.main-products { 
+
+    &-item {
+        border-color: #6161618f;
+
+        &-img img {
+            width: 100%;
+            display: block;
+        }
+
+        &-bottom {
+            display: block;
+            margin-top: 10px;
+        }
+
+        &-slider {
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+
+            &-btn-next, &-btn-prev{
+                position: absolute;
+                top: calc(50% - 20px);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #ffffff86;
+                left: 10px;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: 0.3s;
+                cursor: pointer;
+
+
+                svg{
+                    width: 10px;
+                }
+            }
+            &-btn-next{
+                left: auto;
+                right: 10px;
+                transform: rotate(180deg);
+            }
+
+            &:hover &-btn-next, &:hover &-btn-prev{
+                opacity: 1;   
+            }
+
+            .swiper-pagination {
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                z-index: 10;
+
+                &-bullet{
+                    background-color: #f5e8e8;
+                    width: 16px;
+                    opacity: 1;
+
+                    &-active{
+                        background-color: #412e8b;
+                        width: 20px;
+                    }
+                }
+
+            }
+        }
+
+        &-status {
+            color: #63B755;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 6px;
+
+            span {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 120%;
+                color: #AEADB6;
+            }
+        }
+
+        &-name {
+            display: block;
+            transition-duration: .15s;
+            margin-bottom: 5px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            color: #292730;
+        }
+
+        &-price {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            margin-bottom: 10px;
+
+            span {
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+        &-action {
+            display: flex;
+            justify-content: space-between;
+            gap: 7px;
+        }
+
+        &-count {
+            font-size: 0;
+            line-height: 0;
+            height: 40px;
+            padding: 0 10px;
+            margin-right: 9px;
+            border: 1px solid #EBE8F5;
+            border-radius: 10px;
+        }
+
+
+    }
+}

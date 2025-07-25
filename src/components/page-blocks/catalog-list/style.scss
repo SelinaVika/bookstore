@@ -1,0 +1,27 @@
+
+.catalog {
+    &-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    &-left {
+        width: 250px;
+    }
+
+    &-right {
+        width: calc(100% - 270px);
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .main-products-item {
+            width: calc(25% - 15px);
+        }
+    }
+}
+ 
