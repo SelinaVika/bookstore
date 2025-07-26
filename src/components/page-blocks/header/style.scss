@@ -23,16 +23,15 @@
     }
 
     &-search{
-        align-items: center;
+        width: max-content;
         display: flex;
-        gap: 8px;
-        padding: 8px;
-        position: relative;
-        width: 100%;
+        align-items: center;
+        padding: 14px;
+        border-radius: 28px;
+        background: #f6f6f6;
+        justify-content: center;
 
         &-btn{
-            cursor: pointer;
-            position: relative;
 
             svg{
                 display: flex;
@@ -43,15 +42,11 @@
         }
 
         &-inp{
-            display: flex;
-            position: relative;
-            width: 100%;
+            font-size: 16px;
+            color: #333;
+            margin-left: 14px;
             border: none;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            z-index: 2;
-            background-color: transparent;
+            background: transparent;
     }
 }
     
@@ -84,4 +79,10 @@
         }
     }
 
+}
+
+.main-search{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
