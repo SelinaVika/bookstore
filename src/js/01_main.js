@@ -66,3 +66,24 @@ var productsSlider = new Swiper(".js-products-slider", {
 //   e.preventDefault();
 //   document.querySelector('.main-sidebar').classList.toggle('active');
 // });
+
+var reviewsSlider = new Swiper(".js-news-slider", {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  loop: true,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+      768: {
+          slidesPerView: 2,
+      },
+      991: {
+          slidesPerView: 2.5,
+      },
+      1300: {
+          slidesPerView: 3.5,
+      },
+  },
+});

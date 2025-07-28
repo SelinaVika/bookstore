@@ -1,0 +1,28 @@
+.news{
+    margin-bottom: 40px;
+    &-item{
+        &-img{
+            margin-bottom: 10px;
+        }
+
+        &-title{
+            font-size: 24px;
+            line-height: 1.2;
+            transition: all 0.2s;
+
+            &:hover{
+                color: red;
+            }
+        }
+
+        &-desc{
+            margin-top: 10px;
+            color: #807474;
+
+        }
+    }
+
+    &-slider-wrap{
+        margin-bottom: 40px;
+    }
+}
