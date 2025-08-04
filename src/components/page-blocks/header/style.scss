@@ -8,7 +8,7 @@
         right: 0;
         padding: 10px 0;
         border-bottom: 1px solid #efefef;
-        z-index: 999999;
+        z-index: 999;
         background: #fff;
         transition: all 0.4s;
 
@@ -138,4 +138,149 @@
 
 }
 
- 
+ .main-menu{
+    background: white;
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    width: 250px;
+
+    &-wrap{
+    left: -1000px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    height: 100vh;
+    background: #fff;
+    transition: all 0.4s;
+
+    &.active{
+        left: 0;
+    }
+ }
+
+ }
+
+.main-submenu{
+    
+    &-wrap{
+    position: absolute;
+    top: 0;
+    left: -200%;
+    height: 100%;
+    background: #fff;
+    padding: 5px;
+    width: 250px;
+    border-right: 2px solid #f1f4f5;
+    border-left: 2px solid #f1f4f5;
+    transition: all 0.4s;
+    z-index: -1;
+
+    li{
+    list-style: none;
+    }
+
+    }
+
+     &-item{
+        display:flex ;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 8px 12px;
+        transition: all 0.2s;
+
+        &:hover{
+            background: #ecf4fe;
+        }
+    }
+
+    &-header{
+
+        padding: 8px 12px;
+
+        &-title{
+        font-size: 20px;
+        font-weight: 450;
+        line-height: 26px;
+    }
+
+    &-all{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #2c7edc;
+        transition: all 0.2s;
+        margin-top: 6px;
+
+        &:hover{
+            color: #1a64b9;
+        }
+    }
+
+
+
+    }
+}
+
+
+.main-menu-item{
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 8px 12px;
+    transition: all 0.2s;
+
+    &:hover{
+            background: #ecf4fe;
+        }
+
+    &-link-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &.parent:hover > .main-menu-item-link-wrap::after,
+    &.parent.active > .main-menu-item-link-wrap::after{
+        content: '';
+        display: block;
+        min-width: 10px;
+        width: 10px;
+        height: 10px;
+        background: url(../img/menu-right-arrow.svg) no-repeat center;
+        background-size: contain;
+    }
+    
+    &.parent.active > .main-submenu-wrap {
+        display: block;
+        left: 100%;
+
+    }
+}
+
+.menu-overflow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000059;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.4s;
+
+    &.active {
+    z-index: 999;
+    visibility: visible;
+    pointer-events: initial;
+    opacity: 1;
+}
+
+}
+

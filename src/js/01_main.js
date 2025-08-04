@@ -4,6 +4,38 @@ window.addEventListener('scroll', () => {
   stickyWrap.classList.toggle('fix', window.scrollY  > 120);
 });
 
+const menu = document.querySelector('.main-menu-wrap'); 
+const menuOverflow = document.querySelector('.menu-overflow'); 
+
+document.querySelector('.header-menu-btn').addEventListener('click', () => {
+  menu.classList.toggle('active');
+  menuOverflow.classList.toggle('active');
+});
+
+
+document.querySelectorAll('.main-menu > .main-menu-item').forEach(item => {
+  item.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelectorAll('.main-menu > .main-menu-item').forEach(el => {
+      if (el !== this) {
+        el.classList.remove('active');
+      }
+    });
+
+    this.classList.toggle('active');
+  });
+});
+
+menuOverflow.addEventListener('click', () => {
+    document.querySelectorAll('.main-menu > .main-menu-item').forEach(el => {
+    
+    el.classList.remove('active');
+
+});
+  menu.classList.remove('active');
+  menuOverflow.classList.remove('active');
+});
   
 // var swiper = new Swiper(".js-main-banner", {
 //   autoplay: {
