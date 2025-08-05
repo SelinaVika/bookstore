@@ -1,0 +1,14 @@
+<div class="compilations-wrap">
+  <div class="c-container">
+    <div class="s-title">
+      Книги для каждого: подборки по жанру, настроению и сезону
+    </div>
+    <div class="compilations-list-slider js-compilations-slider swiper">
+      <div class="swiper-wrapper">
+        @@loop('item.html', './data/compilations.json')
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>

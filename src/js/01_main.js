@@ -73,6 +73,29 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
+
+var reviewsSlider = new Swiper(".js-compilations-slider", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+      768: {
+          slidesPerView: 3,
+      },
+      991: {
+          slidesPerView: 3,
+      },
+      1300: {
+          slidesPerView: 4,
+      },
+  },
+});
+
+
 var productsSlider = new Swiper(".js-products-slider", {
   slidesPerView: 1,
   spaceBetween: 20,

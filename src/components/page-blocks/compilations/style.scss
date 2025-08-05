@@ -1,0 +1,40 @@
+.compilations{
+
+    &-wrap{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+
+    &-list-slider{
+        display: flex;
+        gap: 15px;
+
+    }
+
+    &-item{
+        border: 1px solid #efefef;
+        border-radius: 24px;
+        width: calc(100% - 30px);
+
+        &-img{
+            img{
+                border-radius: 24px;
+            }
+        }
+
+        &-content{
+            padding: 24px 32px;
+        }
+
+        &-title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        &-count{
+            margin-top: 40px;
+            color: #807474;
+        }
+    }
+}
