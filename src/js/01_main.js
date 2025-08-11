@@ -118,7 +118,7 @@ var productsSlider = new Swiper(".js-products-slider", {
           slidesPerView: 2,
       },
       991: {
-          slidesPerView: 4,
+          slidesPerView: 4.5,
       },
       1300: {
           slidesPerView: 6,
