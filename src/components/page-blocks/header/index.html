@@ -3,7 +3,36 @@
     <div class="c-container">
       <div class="header-row">
         <button class="header-menu-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            focusable="false"
+            aria-hidden="true"
+            style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+          </svg>
           <span>Каталог</span>
+        </button>
+        <button class="mobile-search-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            class="search-form__icon-search"
+          >
+            <path
+              d="M3 9.999a7 7 0 0 0 10.33 6.158l4.256 4.256a2 2 0 1 0 2.828-2.828l-4.255-4.256A7 7 0 1 0 3 9.999Zm12 0a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"
+            ></path>
+          </svg>
         </button>
         <div class="header-search-wrap">
           <form action="#" class="header-search">
@@ -26,16 +55,29 @@
               placeholder="Найти..."
             />
           </form>
-          <span class="header-search-close"></span>
+          <span class="header-search-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18.3646 7.05135C18.7551 6.66082 18.7551 6.02766 18.3646 5.63713C17.974 5.24661 17.3409 5.24661 16.9504 5.63713L12.0006 10.5869L7.05086 5.63713C6.66033 5.24661 6.02717 5.24661 5.63664 5.63713C5.24612 6.02766 5.24612 6.66082 5.63664 7.05135L10.5864 12.0011L5.63664 16.9508C5.24612 17.3414 5.24612 17.9745 5.63664 18.3651C6.02717 18.7556 6.66033 18.7556 7.05086 18.3651L12.0006 13.4153L16.9504 18.3651C17.3409 18.7556 17.974 18.7556 18.3646 18.3651C18.7551 17.9745 18.7551 17.3414 18.3646 16.9508L13.4148 12.0011L18.3646 7.05135Z"
+              ></path>
+            </svg>
+          </span>
         </div>
         <a href="/" class="header-logo">book<b>store</b> </a>
         <div class="header-actions">
-          <a href="#" class="header-profile"
-            ><img
-              src="/img/account.jpg"
-              width="36px"
-              alt="Профиль пользователя"
-          /></a>
+          <a href="#" class="header-profile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              class="header-controls__icon"
+            >
+              <path
+                d="M16 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11ZM4.636 26.006c.5-3.533 2.384-6.484 5.909-8.006l4.412 2.696a2 2 0 0 0 2.086 0L21.455 18c3.525 1.522 5.41 4.473 5.909 8.006C27.518 27.1 26.604 28 25.5 28h-19c-1.105 0-2.018-.9-1.864-1.994Z"
+              ></path>
+            </svg>
+          </a>
           <a href="#" class="header-cart" data-count="3">
             <svg
               width="36px"
@@ -74,32 +116,15 @@
   <ul class="main-menu">
     <li class="main-menu-item parent">
       <div class="main-menu-item-link-wrap">
-        <a href="#">Художественая литература</a>
+        <a href="#">Художественая литература 1</a>
       </div>
       <div class="main-submenu-wrap">
         <div class="main-submenu-header">
-          <div class="main-submenu-header-title">Художественая литература</div>
-          <a href="#" class="main-submenu-header-all">Смотреть все товары</a>
-        </div>
-        <ul>
-          <li class="main-submenu-item">
-            <a href="#">Художественая литература</a>
-          </li>
-          <li class="main-submenu-item">
-            <a href="#">Художественая литература</a>
-          </li>
-        </ul>
-      </div>
-    </li>
-
-    <li class="main-menu-item parent">
-      <div class="main-menu-item-link-wrap">
-        <a href="#">Художественая литература 2</a>
-      </div>
-      <div class="main-submenu-wrap">
-        <div class="main-submenu-header">
-          <div class="main-submenu-header-title">
-            Художественая литература 2
+          <div class="main-submenu-header-title-wrap">
+            <span class="main-submenu-back"></span>
+            <div class="main-submenu-header-title">
+              Художественая литература 2
+            </div>
           </div>
           <a href="#" class="main-submenu-header-all">Смотреть все товары</a>
         </div>
@@ -116,12 +141,15 @@
 
     <li class="main-menu-item parent">
       <div class="main-menu-item-link-wrap">
-        <a href="#">Художественая литература 3</a>
+        <a href="#">Художественая литература 1</a>
       </div>
       <div class="main-submenu-wrap">
         <div class="main-submenu-header">
-          <div class="main-submenu-header-title">
-            Художественая литература 3
+          <div class="main-submenu-header-title-wrap">
+            <span class="main-submenu-back"></span>
+            <a href="#" class="main-submenu-header-title">
+              Художественая литература 2
+            </a>
           </div>
           <a href="#" class="main-submenu-header-all">Смотреть все товары</a>
         </div>
