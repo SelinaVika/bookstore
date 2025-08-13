@@ -46,6 +46,22 @@
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
         "discount": "10"
+    },
+    {
+        "price":"3 000",
+        "oldprice":"4 000",
+        "name": "Ониксовый шторм",
+        "image": "/img/product1.jpg",
+        "author": "Ребекка Яррос",
+        "discount": "10"
+    },
+    {
+        "price":"3 000",
+        "oldprice":"4 000",
+        "name": "Ониксовый шторм",
+        "image": "/img/product1.jpg",
+        "author": "Ребекка Яррос",
+        "discount": "10"
     }
     
 ]

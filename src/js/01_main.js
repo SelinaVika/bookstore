@@ -106,7 +106,7 @@ var reviewsSlider = new Swiper(".js-compilations-slider", {
 
 
 var productsSlider = new Swiper(".js-products-slider", {
-  slidesPerView: 1,
+  slidesPerView: 2.2,
   spaceBetween: 20,
   loop: true,
   navigation: {
@@ -115,13 +115,13 @@ var productsSlider = new Swiper(".js-products-slider", {
   },
   breakpoints: {
       768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
       },
-      991: {
-          slidesPerView: 4.5,
+      1024: {
+          slidesPerView: 4,
       },
       1300: {
-          slidesPerView: 6,
+          slidesPerView: 5,
       },
   },
 });
@@ -140,11 +140,14 @@ var reviewsSlider = new Swiper(".js-news-slider", {
       prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-      768: {
+      600: {
           slidesPerView: 2,
       },
+      768: {
+          slidesPerView: 3,
+      },
       991: {
-          slidesPerView: 2.5,
+          slidesPerView: 3,
       },
       1300: {
           slidesPerView: 3.5,
