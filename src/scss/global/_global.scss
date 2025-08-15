@@ -19,25 +19,17 @@
     background-color: #0b7eb3;
     display: flex;
     min-width: 37px;
-    width: 178px;
+    width: 100%;
     height: 37px;
+    color: #fff;
 
     &.active {
         background-color: #63B755;
     }
-}
 
-
-.main-product-like {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 37px;
-    width: 37px;
-    height: 37px;
-    border: 1px solid #EBE8F5;
-    border-radius: 10px;
-
+    @media (max-width: 425px){
+        font-size: 14px;
+    }
 }
 
 // .main-counter {

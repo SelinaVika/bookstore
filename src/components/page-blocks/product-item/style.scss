@@ -10,45 +10,68 @@
             overflow: hidden;
             img {
                 display: block;
-                
-            width: 100%;
+                width: 100%;
             }
         }
 
         &-name{
             font-weight: 400;
             line-height: 20px;
+
+            @media (max-width: 425px){
+                font-size: 14px;
+            }
+
+            @media (max-width: 330px){
+                font-size: 12px;
+            }
         }
 
         &-author{
             font-size: 14px;
             color: #363636;
+
+            @media (max-width: 425px){
+                font-size: 12px;
+            }
+            @media (max-width: 330px){
+                font-size: 10px;
+            }
         }
 
         &-price{
-            display: flex;
             color: #fa1157;;
             font-size: 18px;
             font-weight: 450;
+            width: 100%;
+
+            @media (max-width: 425px){
+                font-size: 14px;
+            }
     }
         &-oldprice{
             margin-top: 5px;
-            display: flex;
             color: #363636;
             text-decoration: line-through #fa1157;
             font-size: 12px;
             font-weight: 400;
             line-height: 14px;
+
+            @media (max-width: 425px){
+                font-size: 10px;
+            }
     }
 
     &-sale{
         display: flex;
-        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+
     }
 
     &-discount{
         font-size: 13px;
-        height: 19px;
+        height: 19px;  
         min-width: 19px;
         padding-left: 5px;
         padding-right: 5px;
@@ -57,6 +80,13 @@
         line-height: 20px;
         background-color: #fa1157;
         color: #fff;
+
+        @media (max-width: 500px){
+            font-size: 12px;
+        }
+        @media (max-width: 425px){
+            font-size: 10px;
+        }
     }
 
     }
@@ -86,10 +116,4 @@
     gap: 10px;
 
 }
-
-// .main-product-like {
-//     position: absolute;
-//     top: 10px;
-//     right: 10px;
-// }
 

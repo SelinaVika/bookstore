@@ -5,7 +5,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     },
     {
         "price":"3 000",
@@ -13,7 +13,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     },
     {
         "price":"3 000",
@@ -21,7 +21,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     },
     {
         "price":"3 000",
@@ -29,7 +29,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     },
     {
         "price":"3 000",
@@ -37,7 +37,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     },
     {
         "price":"3 000",
@@ -45,7 +45,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     },
     {
         "price":"3 000",
@@ -53,7 +53,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     },
     {
         "price":"3 000",
@@ -61,7 +61,7 @@
         "name": "Ониксовый шторм",
         "image": "/img/product1.jpg",
         "author": "Ребекка Яррос",
-        "discount": "10"
+        "discount": "25"
     }
     
 ]
