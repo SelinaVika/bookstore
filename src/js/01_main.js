@@ -62,7 +62,7 @@ menuOverflow.addEventListener('click', () => {
 // });
 
 var reviewsSlider = new Swiper(".reviews-slider", {
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 20,
   loop: true,
   navigation: {
@@ -71,20 +71,20 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
   breakpoints: {
       768: {
-          slidesPerView: 2,
+          slidesPerView: 2.2,
       },
       991: {
-          slidesPerView: 2,
+          slidesPerView: 2.2,
       },
       1300: {
-          slidesPerView: 3,
+          slidesPerView: 3.2,
       },
   },
 });
 
 
 var reviewsSlider = new Swiper(".js-compilations-slider", {
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 20,
   loop: true,
   navigation: {
@@ -92,11 +92,11 @@ var reviewsSlider = new Swiper(".js-compilations-slider", {
       prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-      768: {
-          slidesPerView: 3,
+      600: {
+          slidesPerView: 2.2,
       },
       991: {
-          slidesPerView: 3,
+          slidesPerView: 3.2,
       },
       1300: {
           slidesPerView: 4,
@@ -182,4 +182,22 @@ document.querySelectorAll('.main-submenu-back').forEach(item => {
     document.querySelector('.main-menu > .main-menu-item.active').classList.remove('active');
 
 });
+});
+
+document.querySelectorAll('.footer-menu-title').forEach(title => {
+  title.addEventListener('click', function() {
+    const next = this.nextElementSibling;
+
+    if (window.innerWidth > 600) return;
+    
+    if (!next) return;
+
+    if (next.style.maxHeight) {
+      // Скрыть
+      next.style.maxHeight = null;
+    } else {
+      // Показать
+      next.style.maxHeight = next.scrollHeight + "px";
+    }
+  });
 });

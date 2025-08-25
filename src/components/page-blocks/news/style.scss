@@ -1,5 +1,9 @@
 .news{
-    margin-bottom: 40px;
+    margin-bottom: $margAfterBlock;
+
+    @media (max-width: 1024px){
+        margin-bottom: $MgAfterBlockSmall;
+    }
     &-item{
         &-img{
             margin-bottom: 10px;

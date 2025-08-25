@@ -1,8 +1,6 @@
 .header {
     height: 70px;
 
-
-
     &-sticky {
         position: fixed;
         top: 0;
@@ -234,6 +232,18 @@
         border-left: 2px solid #f1f4f5;
         transition: all 0.4s;
         z-index: -1;
+
+            &::after{
+        content: "";
+        display: block;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        background-image: url(../img/footer-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
 
         @media (max-width: 768px) {
             left: 0;

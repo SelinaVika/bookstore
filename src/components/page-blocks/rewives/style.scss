@@ -2,8 +2,12 @@
     padding: 10px 0;
     overflow: visible;
     &-wrap {
-        margin-bottom: 50px;
+        margin-bottom: $margAfterBlock;
         overflow: hidden;
+
+        @media (max-width: 1024px){
+            margin-bottom: $MgAfterBlockSmall;
+        }
     }
 
     &-title {

@@ -1,7 +1,11 @@
 .main-products{
 
     &-wrap{
-        margin-bottom: 80px;
+        margin-bottom: $margAfterBlock;
+
+        @media (max-width: 1024px){
+            margin-bottom: $MgAfterBlockSmall;
+        }
     }
 
   
