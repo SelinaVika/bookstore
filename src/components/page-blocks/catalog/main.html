@@ -699,6 +699,10 @@
         </div>
       </aside>
       <div class="catalog-content">
+        <div class="catalog-control">
+          @@include('sort.html')
+          <div class="catalog-count">709 399 товаров</div>
+        </div>
         <div class="catalog-list">
           @@loop('../product-item/index.html', './data/products.json')
         </div>

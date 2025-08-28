@@ -201,3 +201,39 @@ document.querySelectorAll('.footer-menu-title').forEach(title => {
     }
   });
 });
+
+
+
+ 
+document.querySelector('.catalog-sort-current').addEventListener('click',(e) =>{
+  e.preventDefault(); 
+  document.querySelector('.catalog-sort-menu-wrap').classList.toggle('active')
+  
+});
+
+document.querySelectorAll('.catalog-sort-menu-item').forEach(el => {
+  el.addEventListener('click', function() {
+    
+  document.querySelector('.catalog-sort-menu-wrap').classList.remove('active')
+  });
+});
+
+document.addEventListener('click', function(e) {
+    var container = document.getElementquerySelector('.catalog-sort');
+
+    if (!container.contains(e.target)) {
+        document.querySelector('.catalog-sort-menu-wrap').classList.remove('active')
+    }
+});
+
+
+const sort = document.querySelector(".catalog-sort");
+const current = document.querySelector(".catalog-sort-current");
+const menuWrap = document.querySelector(".catalog-sort-menu-wrap");
+
+// закрыть при клике вне блока сортировки
+document.addEventListener("click", (e) => {
+  if (!sort.contains(e.target)) {
+    menuWrap.classList.remove("active");
+  }
+});
