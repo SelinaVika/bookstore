@@ -237,3 +237,26 @@ document.addEventListener("click", (e) => {
     menuWrap.classList.remove("active");
   }
 });
+
+
+
+
+
+document.querySelectorAll(".catalog-filter-item").forEach(filter => {
+  const resetBtn = filter.querySelector(".catalog-filter-reset");
+  const checkboxes = filter.querySelectorAll("input[type='checkbox']");
+
+  if (!resetBtn) return; // если кнопки нет, пропускаем
+
+  function updateState() {
+    const anyChecked = Array.from(checkboxes).some(cb => cb.checked);
+    resetBtn.classList.toggle("active", anyChecked);
+  }
+
+  checkboxes.forEach(cb => cb.addEventListener("change", updateState));
+
+  resetBtn.addEventListener("click", () => {
+    checkboxes.forEach(cb => cb.checked = false);
+    resetBtn.classList.remove("active");
+  });
+});
