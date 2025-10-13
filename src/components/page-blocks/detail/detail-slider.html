@@ -53,13 +53,75 @@
         </div>
       </div>
     </div>
-    <div class="detail-product-wrap">
-      <div class="detail-product-main">
-        <div class="detail-product-slider"></div>
-      </div>
-      @@include('description.html')
 
-      <div class="detail-product-main"></div>
+    <div class="detail-product-row">
+      <div class="detail-product-colomn">
+        <div class="prod-card-img-wrap">
+          <section class="product-slider">
+            <div class="product-slider__flex">
+              <div class="product-slider__col">
+                <div class="product-slider__prev swiper-button-prev"></div>
+                <div class="product-slider__thumbs">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-slider__image">
+                          <img src="../img/frontbook.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-slider__image">
+                          <img src="../img/backbook.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-slider__image">
+                          <img src="../img/sizebook.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-slider__next swiper-button-next"></div>
+              </div>
+              <div class="product-slider__images">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a
+                        href="../img/frontbook.jpg"
+                        data-fancybox=""
+                        class="product-slider__image"
+                        ><img src="../img/frontbook.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="../img/backbook.jpg"
+                        data-fancybox=""
+                        class="product-slider__image"
+                        ><img src="../img/backbook.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="../img/sizebook.jpg"
+                        data-fancybox=""
+                        class="product-slider__image"
+                        ><img src="../img/sizebook.jpg" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="detail-product-colomn">@@include('description.html')</div>
     </div>
+    <!-- @@include('properties.html') -->
+    @@include('rewives.html')
   </div>
 </div>

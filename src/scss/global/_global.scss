@@ -186,3 +186,21 @@
     }
 
 }
+
+.main-btn {
+    cursor: pointer;
+    background: #005bff;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 16px;
+    width: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+
+        color: #fff;
+        background: #0c4bbd;;
+    }
+}

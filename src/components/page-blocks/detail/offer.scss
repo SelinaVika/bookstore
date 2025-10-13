@@ -1,0 +1,89 @@
+.product-offer {
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    min-height: 66px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 20px 12px -16px rgba(0, 30, 85, .1), 0 8px 24px 18px rgba(0, 30, 85, .05);
+    margin-bottom: 40px;
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    &-price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-newprice {
+        display: flex;
+        justify-content: center;
+        width: 110px;
+        background: #10c44c;
+        border-radius: 8px;
+        color: #fff;
+        padding: 2px 8px;
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &-oldprice {
+        color: rgba(0, 26, 52, .6);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        padding: 0 5px;
+        text-decoration: line-through #fa1157;
+    }
+
+    &-buy {
+        cursor: pointer;
+        background: rgba(0, 91, 255, 1);
+        color: #fff;
+        border-radius: 8px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 16px;
+        width: 100%;
+    }
+
+    &-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    &-status {
+        color: #10c44c;
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        gap: 4px;
+        line-height: 20px;
+
+        svg {
+            height: 20px;
+            width: 20px;
+            min-width: 16px;
+        }
+
+    }
+
+    &-date {
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

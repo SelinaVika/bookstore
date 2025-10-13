@@ -1,0 +1,122 @@
+.product {
+
+    &-rewives {
+        margin-bottom: 24px;
+
+        &-title {
+            display: flex;
+            margin-bottom: 12px;
+
+            &-rew,
+            &-que {
+                display: flex;
+                padding: 0 10px;
+                border-bottom: 2px #cecece solid;
+                transition: all 0.3s ease-in-out;
+
+                &.active {
+                    border-bottom: 2px #000000 solid;
+                }
+
+
+
+                &-text {
+                    cursor: pointer;
+                    font-weight: 500px;
+                    font-size: 24px;
+                    letter-spacing: .4px;
+                    line-height: 30px;
+
+
+
+                }
+
+                span {
+                    color: #707f8d;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &-filter {
+            margin-bottom: 32px;
+            max-width: 300px;
+
+
+            &-current {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                cursor: pointer;
+                border: 1px solid #cecece;
+                border-radius: 4px;
+                font-size: 16px;
+                font-weight: 400;
+                justify-content: space-between;
+                line-height: 24px;
+                padding: 8px 16px;
+                align-items: center;
+                gap: 8px;
+
+                &:hover {
+                    box-shadow: 0 0 0 4px rgba(188, 228, 245, .5);
+                    border-color: #9ee7f0;
+                    outline: none;
+
+                    svg{
+                        rotate: none;
+                    }
+                }
+
+            }
+
+            svg {
+                rotate: calc(180deg);
+                width: 24px;
+                min-width: 24px;
+                transition: all 0.3s ease;
+            }
+
+            
+
+
+            &-menu {
+                min-width: 300px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                background: #fff;
+                box-shadow: 0 8px 12px #41465633;
+                padding: 12px;
+
+                &-wrap {
+                    display: none;
+                    margin-top: 5px;
+                    position: absolute;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+
+                &-item {
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    padding: 6px 10px;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        background-color: rgba(204, 204, 204, 0.5);
+                    }
+                }
+
+
+            }
+        }
+
+
+
+    }
+}

@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 12px;
 
         &-right {
             display: flex;
@@ -39,9 +40,14 @@
 
     &-product {
 
-        &-wrap{
+        &-row {
             display: flex;
             justify-content: space-between;
+            gap: 32px;
+        }
+
+        &-colomn {
+            width: calc(100% - 32px);
         }
 
         // &-slider {
@@ -50,9 +56,27 @@
         //     width: 300px;
         //     max-width: 300px;
         // }
+    }
+}
 
-        &-main {
-            width: calc(100%/3 - 48px);
+.product {
+
+    &-media {
+
+        display: flex;
+        justify-content: center;
+
+        &-preview {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 20px;
+
+            img {
+                cursor: pointer;
+                width: 100%;
+            }
+
         }
     }
 }
